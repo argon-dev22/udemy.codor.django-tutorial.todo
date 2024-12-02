@@ -12,7 +12,7 @@ WORKDIR /usr/src/app
 # アプリケーションコードをコピー（ローカルでは不要）
 # COPY . .
 
-# ビルド
+# ビルド（ローカルでは不要）
 # RUN npm run build
 
 # ポートを公開
