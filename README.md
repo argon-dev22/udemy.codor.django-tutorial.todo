@@ -24,7 +24,7 @@ git clone https://github.com/<username>/udemy.codor.django-tutorial.todo.git
 
 ## 2. 環境変数の設定
 
-frontendとbackendでそれぞれ`.env.example` をコピーして `.env` を作成し、環境変数を設定する。
+frontend と backend でそれぞれ`.env.example` をコピーして `.env` を作成し、環境変数を設定する。
 
 ## 3. ライブラリのインストール（フロントエンド）
 
@@ -46,10 +46,18 @@ http://localhost:3000/
 
 ## その他のコマンド
 
-### マイグレーション
+### コンテナ内でコマンドを実行
+
+#### フロントエンド
 
 ```
-docker compose exec backend python manage.py migrate
+docker compose exec frontend <コマンド>
+```
+
+#### バックエンド
+
+```
+docker compose exec backend <コマンド>
 ```
 
 ### コンテナの停止 & 削除
