@@ -24,9 +24,11 @@ git clone https://github.com/<username>/udemy.codor.django-tutorial.todo.git
 
 ## 2. 環境変数の設定
 
-`.env.example` をコピーして `.env` を作成し、環境変数を設定する。
+frontendとbackendでそれぞれ`.env.example` をコピーして `.env` を作成し、環境変数を設定する。
 
 ## 3. ライブラリのインストール（フロントエンド）
+
+バックエンドのライブラリは自動でインストールされるため、フロントエンドのライブラリのみインストールする。
 
 ```
 docker compose run frontend npm install
