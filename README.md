@@ -31,6 +31,7 @@ frontend と backend でそれぞれ`.env.example` をコピーして `.env` を
 バックエンドのライブラリは自動でインストールされるため、フロントエンドのライブラリのみインストールする。
 
 ```
+cd ./udemy.codor.django-tutorial.todo
 docker compose run frontend npm install
 ```
 
