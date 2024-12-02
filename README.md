@@ -10,11 +10,15 @@
 
 ## 1. リポジトリをクローン
 
-```
-# SSH
-git clone git@github.com:<username>/udemy.codor.django-tutorial.todo.git
+### SSH
 
-# HTTPS
+```
+git clone git@github.com:<username>/udemy.codor.django-tutorial.todo.git
+```
+
+### HTTPS
+
+```
 git clone https://github.com/<username>/udemy.codor.django-tutorial.todo.git
 ```
 
