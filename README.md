@@ -1,17 +1,61 @@
-# Start Project
+# TODO アプリケーション
+
+## 概要
+
+このプロジェクトは、Django を使用した TODO アプリケーションです。フロントエンドは React を使用しています。
+
+## 前提条件
+
+- Docker がインストールされていること
 
 ## 1. リポジトリをクローン
 
 ```
-git clone https://github.com/k-kawabata/django-react-docker.git
+# SSH
+git clone git@github.com:<username>/udemy.codor.django-tutorial.todo.git
+
+# HTTPS
+git clone https://github.com/<username>/udemy.codor.django-tutorial.todo.git
 ```
 
-## 2. コンテナを起動
+## 2. 環境変数の設定
+
+.env.example をコピーして.env を作成し、環境変数を設定する。
+
+## 3. ライブラリのインストール（フロントエンド）
 
 ```
-docker compose up
+docker compose run frontend npm install
 ```
 
-## 3. ブラウザで確認
+## 4. コンテナを起動
+
+```
+docker compose up -d --build
+```
+
+## 5. ブラウザで確認
 
 http://localhost:3000/
+
+## その他のコマンド
+
+### マイグレーション
+
+```
+docker compose exec backend python manage.py migrate
+```
+
+### コンテナの停止 & 削除
+
+```
+docker compose down
+```
+
+### ログを確認
+
+トラブルシューティングの際は、ログを確認してください。
+
+```
+docker compose logs -f
+```
