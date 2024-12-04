@@ -41,7 +41,13 @@ docker compose run frontend npm install
 docker compose up -d --build
 ```
 
-## 5. ブラウザで確認
+## 5. tailwindcss のビルドプロセスを開始
+
+```
+docker compose exec frontend npm run build:css
+```
+
+## 6. ブラウザで確認
 
 http://localhost:3000/
 
