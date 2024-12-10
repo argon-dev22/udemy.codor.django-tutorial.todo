@@ -13,7 +13,7 @@ function Home() {
     axios
       .get(`${BACKEND_ORIGIN}/api/tasks/`)
       .then((res) => setTasks(res.data))
-      .catch((err) => console.log(err));
+      .catch(() => 1);
   }, []);
 
   return (
