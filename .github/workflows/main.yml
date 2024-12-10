@@ -1,0 +1,36 @@
+name: Merge main branch to child branch
+
+on:
+  push:
+    branches:
+      - "main"
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Git
+        env:
+          GIT_USER_NAME: "argon_dev22"
+          GIT_USER_EMAIL: "hyouga.programing@gmail.com"
+        run: |
+          git config user.name ${{ env.GIT_USER_NAME }}
+          git config user.email ${{ env.GIT_USER_EMAIL }}
+
+      - name: Merge changes to stg
+        run: |
+          git fetch origin
+          git checkout stg
+          git merge main
+          git push origin stg
+
+      - name: Merge changes to develop
+        run: |
+          git fetch origin
+          git checkout develop
+          git merge main
+          git push origin develop

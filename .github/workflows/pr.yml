@@ -1,4 +1,4 @@
-name: PR
+name: Check code style
 
 on:
   pull_request:
@@ -6,7 +6,7 @@ on:
       - "*"
 
 jobs:
-  build:
+  check:
     runs-on: ubuntu-latest
 
     defaults:
