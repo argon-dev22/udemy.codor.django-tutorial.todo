@@ -9,7 +9,6 @@ const Header = () => {
         <ul className='flex gap-4'>
           <li>
             <Link to='/'>Home</Link>
-            <Link to='/task'>Task</Link>
           </li>
         </ul>
       </div>
