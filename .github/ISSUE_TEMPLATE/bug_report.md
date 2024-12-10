@@ -1,38 +1,58 @@
 ---
-name: Bug report
-about: Create a report to help us improve
-title: ''
-labels: ''
-assignees: ''
+name: 🐛 Bug Report
+about: バグの報告を行う
+title: "[bug] タイトル"
+labels: bug
+assignees:
+---
+
+## 🐛 バグの概要 <!-- バグの内容を簡潔に記載してください。 -->
+
+<!-- 例: 保存ボタンを押してもデータが保存されません -->
 
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+## 📋 再現手順 <!-- バグを再現する手順を記載してください。 -->
 
-**To Reproduce**
-Steps to reproduce the behavior:
+<!-- 例:
 1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+2. Click on '...'
+3. Scroll down to '...'
+4. See error -->
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+---
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+## 🖥️ 期待する動作 <!-- 本来期待される動作を記載してください。 -->
 
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
+<!-- 例: 保存ボタンを押すと、入力データがデータベースに保存されるべき -->
 
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
+---
 
-**Additional context**
-Add any other context about the problem here.
+## 💻 スクリーンショットまたはログ <!-- 問題を説明するために役立つスクリーンショットやエラーログを添付してください。 -->
+
+<!-- 例: スクリーンショットやエラーメッセージのキャプチャ -->
+
+---
+
+## 🛠️ 環境情報 <!-- バグが発生している環境を記載してください。 -->
+
+<!-- 例:
+- OS: [例: Windows 10, macOS Monterey]
+- ブラウザ: [例: Chrome 96, Firefox 89]
+- バージョン: [例: 1.0.0] -->
+
+---
+
+<details>
+<summary>🔗 関連 Issue(オプション)</summary> <!-- このバグに関連する他の Issue やリンクを記載してください。 -->
+
+<!-- 例: 関連Issue #123 -->
+
+</details>
+
+<details>
+<summary>⚠️ その他の情報(オプション)</summary> <!-- 特定の条件でのみ発生する、特定のユーザーでのみ再現するなど、関連して補足すべき情報があれば記載してください。 -->
+
+<!-- 例: 特定の条件でのみ発生する、特定のユーザーでのみ再現する -->
+
+</details>

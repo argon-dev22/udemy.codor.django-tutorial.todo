@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 
-import Task from "../components/Task";
-import { Task as TaskType } from "../types/Task";
+import Task from '../components/Task';
+import { Task as TaskType } from '../types/Task';
 
 const BACKEND_ORIGIN = import.meta.env.VITE_BACKEND_ORIGIN;
 
